@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio | PRECIOUS</title>
+    <title>Precious - Building Digital Solutions & Software</title>
     <link rel="stylesheet" href="styles.css">
     <!--Preconnect to improve loading speed-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <!--The actual font(Poppins) link-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/606/606248.png" type="image/x-icon">
   </head>
   <body>
     <header class="header">
@@ -158,6 +159,24 @@
 
   // Start the animation
   document.addEventListener("DOMContentLoaded", type);
+  let sections = document.querySelectorAll('section');
+  let navLinks = document.querySelectorAll('header nav a');
+
+  window.onscroll = () => {
+    sections.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+
+      if(top >= offset && top < offset + height) {
+        navLinks.forEach(links => {
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        });
+      };
+    });
+  };
   </script>
   </body>
 </html>
