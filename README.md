@@ -1,10 +1,10 @@
 # NexusAuth
 
-A responsive portfolio page exploring authentication UX and modern UI design — built with HTML and CSS.
+A responsive personal portfolio landing page — built with HTML and CSS.
 
 ## About
 
-An early web development project built while learning frontend fundamentals and exploring the intersection of authentication interfaces and modern design. This project represents an earlier stage of my development journey and is preserved as part of that progression.
+An early web development project built while learning frontend fundamentals and modern UI design. It is a single-page personal portfolio with an animated hero, an about section, skills, and contact links. It is preserved as part of my development progression.
 
 ## Tech
 
@@ -17,3 +17,4 @@ An early web development project built while learning frontend fundamentals and 
 - Modern UI patterns
 - CSS Grid and Flexbox
 - Typography and visual hierarchy
+- Inline JavaScript for subtle interactions (typing animation)
